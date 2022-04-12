@@ -64,4 +64,20 @@ stopwords[0:10]
 
 #importing the Stemming function from nltk library
 
+# Check distribution of authors in the data
+data['author'].value_counts()
+
+# Create word count and character count lists
+word_count = []
+char_count = []
+""""
+https://github.com/gkhayes/author_attribution/blob/master/analysis.ipynb
+
+# Create word count and character count lists
+# """
+
+for i in range(0, len(authors_information)):
+    word_count.append(len(authors_information[i].split()))
+    char_count.append(len(authors_information[i]))
+
 
