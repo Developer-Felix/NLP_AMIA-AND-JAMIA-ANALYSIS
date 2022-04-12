@@ -80,4 +80,6 @@ for i in range(0, len(authors_information)):
     word_count.append(len(authors_information[i].split()))
     char_count.append(len(authors_information[i]))
 
+#train_test
+
 
